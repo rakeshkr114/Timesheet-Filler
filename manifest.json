@@ -1,0 +1,17 @@
+{
+  "name": "Timesheet-Filler",
+  "version": "1.0",
+		
+  "manifest_version": 2,
+  "description": "Fill timesheets!",
+  
+  "permissions": [
+    "<all_urls>","tabs","activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+	"default_title": "Timesheet-Filler",
+	"default_popup": "my.html"
+  }
+}
