@@ -29,15 +29,15 @@ chrome.tabs.query({ "url": "https://essapps.mindtree.com/sites/TimeSheet*" }, fu
 				var day4_el=document.getElementById("ctl00_PlaceHolderMain_gvUsers_ctl02_txtEffortDay4");
 				var day5_el=document.getElementById("ctl00_PlaceHolderMain_gvUsers_ctl02_txtEffortDay5");
 
-				if(day1_el.readOnly == false)
+				if(day1_el != null && day1_el.readOnly == false)
 					day1_el.value =hrs_value ;
-				if(day2_el.readOnly == false)
+				if(day2_el != null && day2_el.readOnly == false)
 					day2_el.value =hrs_value ;
-				if(day3_el.readOnly == false)
+				if(day3_el != null && day3_el.readOnly == false)
 					day3_el.value =hrs_value ;
-				if(day4_el.readOnly == false)
+				if(day4_el != null && day4_el.readOnly == false)
 					day4_el.value =hrs_value ;
-				if(day5_el.readOnly == false)
+				if(day5_el != null && day5_el.readOnly == false)
 					day5_el.value =hrs_value ;`
 	},function (attr_value) { // Execute your code
 	}); // end of chrome executescript for next btn title and play/pause btn attribute
